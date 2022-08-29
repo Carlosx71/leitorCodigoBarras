@@ -9,13 +9,20 @@
 </head>
 
 <body>
-   Teste
-    <strong><div id="resultado"></div></strong>
+    <!-- <strong><div id="resultado"></div></strong> -->
     <div id="camera"></div>
 
     <script src="quagga.min.js"></script>
 
     <script>
+        let barCode = '';
+
+        const redirect = () => {
+            const newUrl = `${location.origin}/${barCode}/redirecting.html`;
+            location.reload();
+            location.assign(newUrl)
+        }
+
         Quagga.init({
             inputStream: {
                 name: "Live",
@@ -35,12 +42,13 @@
         });
 
         Quagga.onDetected(function (data) {
-            console.log(data.codeResult.code);
-            document.querySelector('#resultado').innerText = data.codeResult.code;
+            barCode = data.codeResult.code;
+            redirect();
+            // document.querySelector('#resultado').innerText = data.codeResult.code;
         });
 
-    </script>
 
+    </script>
 </body>
 
 </html>
