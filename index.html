@@ -9,14 +9,13 @@
 </head>
 
 <body>
-    oi mundo
-    <div id="resultado"></div>
+   Teste
+    <strong><div id="resultado"></div></strong>
     <div id="camera"></div>
 
     <script src="quagga.min.js"></script>
 
     <script>
-        console.log('Sou eu')
         Quagga.init({
             inputStream: {
                 name: "Live",
@@ -24,7 +23,7 @@
                 target: document.querySelector('#camera')    // Or '#yourElement' (optional)
             },
             decoder: {
-                readers: ["code_128_reader"]
+                readers: ["ean_reader","code_128_reader"]
             }
         }, function (err) {
             if (err) {
