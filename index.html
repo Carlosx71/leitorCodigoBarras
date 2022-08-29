@@ -18,7 +18,7 @@
         let barCode = '';
 
         const redirect = () => {
-            const newUrl = `${location.origin}/${barCode}/redirecting.html`;
+            const newUrl = `${location.origin}/resultado=${barCode}`;
             location.reload();
             location.assign(newUrl)
         }
