@@ -1,9 +1,10 @@
 import Quagga from 'quagga';
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const BarcodeScanner = () => {
   const videoRef = useRef(null);
+  const [code, setCode] = useState('');
 
   useEffect(() => {
     Quagga.init(
@@ -14,7 +15,17 @@ const BarcodeScanner = () => {
           target: videoRef.current,
         },
         decoder: {
-          readers: ['ean_reader'], // Pode adicionar outros tipos de código de barras, por exemplo: ['ean_reader', 'code_128_reader']
+          readers: [
+            'code_128',
+            'ean',
+            'upc',
+            'code_39',
+            'codabar',
+            'itf',
+            'code_93',
+            'qr_code',
+            'pdf417',
+          ],
         },
       },
       (err) => {
@@ -29,6 +40,8 @@ const BarcodeScanner = () => {
 
     Quagga.onDetected((result) => {
       console.log('Código de barras detectado:', result.codeResult.code);
+      setCode(result.codeResult.code);
+      console.log('Vou testar aqui');
       // Faça algo com o código de barras detectado aqui, por exemplo, enviar para o servidor, exibir na tela, etc.
     });
 
@@ -41,6 +54,7 @@ const BarcodeScanner = () => {
     <>
       <h1>Leitor de código de barras</h1>
       <video ref={videoRef} />
+      <h2>{code}</h2>
     </>
   );
 };
