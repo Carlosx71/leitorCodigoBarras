@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/leitorCodigoBarras/static/js/main.a027541b.js",
+    "main.js": "/leitorCodigoBarras/static/js/main.6490a524.js",
     "static/js/787.8ec56c98.chunk.js": "/leitorCodigoBarras/static/js/787.8ec56c98.chunk.js",
     "index.html": "/leitorCodigoBarras/index.html",
-    "main.a027541b.js.map": "/leitorCodigoBarras/static/js/main.a027541b.js.map",
+    "main.6490a524.js.map": "/leitorCodigoBarras/static/js/main.6490a524.js.map",
     "787.8ec56c98.chunk.js.map": "/leitorCodigoBarras/static/js/787.8ec56c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a027541b.js"
+    "static/js/main.6490a524.js"
   ]
 }
