@@ -1,0 +1,83 @@
+
+#html5-qrcode-button-camera-permission {
+  text-indent: -9999px;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+#html5-qrcode-button-camera-permission:after {
+  content: "Requisitar permissão para camera";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+#html5-qrcode-anchor-scan-type-change {
+  font-size: 0;
+}
+#html5-qrcode-anchor-scan-type-change:after {
+  font-size: 1rem;
+  content: "Scannear um arquivo de imagem";
+  cursor: pointer;
+}
+#html5-qrcode-button-file-selection {
+  text-indent: -9999px;
+  line-height: 0;
+  margin-bottom: 0 !important;
+}
+#html5-qrcode-button-file-selection:after {
+  content: "Enviar uma imagem";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+
+
+#html5qr-code-full-region__header_message {
+  text-indent: -9999px;
+  line-height: 0;
+}
+#html5qr-code-full-region__header_message:after {
+  content: "O código QR não é legível na foto enviada, recorte e carregue.";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+
+.photo-upload-message {
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+/* Use o pseudo-elemento ::after para adicionar o texto substituto */
+.photo-upload-message::after {
+  content: "Você pode arrastar e soltar a foto.";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+
+#html5qr-code-full-reader__header_message {
+  content: "Falha!";
+}
+
+/* #html5qr-code-full-region {
+  img[alt="Info icon"] {
+    display: none;
+  }
+} */
+
+/* #html5qr-code-full-region__dashboard_section {
+  div:first-of-type {
+    div:last-of-type {
+      div {
+        text-indent: -9999px;
+        line-height: 0;
+      }
+      div:after {
+        content: "Fotoğrafı sürükleyip bırakabilirsiniz.";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+      }
+    }
+  }
+} */
