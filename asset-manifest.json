@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/seu-repositorio/static/js/main.f374a552.js",
-    "static/js/787.8ec56c98.chunk.js": "/seu-repositorio/static/js/787.8ec56c98.chunk.js",
-    "index.html": "/seu-repositorio/index.html",
-    "main.f374a552.js.map": "/seu-repositorio/static/js/main.f374a552.js.map",
-    "787.8ec56c98.chunk.js.map": "/seu-repositorio/static/js/787.8ec56c98.chunk.js.map"
+    "main.js": "/leitorCodigoBarras/static/js/main.d73548e7.js",
+    "static/js/787.8ec56c98.chunk.js": "/leitorCodigoBarras/static/js/787.8ec56c98.chunk.js",
+    "index.html": "/leitorCodigoBarras/index.html",
+    "main.d73548e7.js.map": "/leitorCodigoBarras/static/js/main.d73548e7.js.map",
+    "787.8ec56c98.chunk.js.map": "/leitorCodigoBarras/static/js/787.8ec56c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f374a552.js"
+    "static/js/main.d73548e7.js"
   ]
 }
