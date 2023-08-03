@@ -1,10 +1,13 @@
 import React from 'react';
 import BarcodeScanner from './components/BarcodeScanner';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <BarcodeScanner />
+      <Routes>
+        <Route path="/:id" element={<BarcodeScanner />} />
+      </Routes>
     </div>
   );
 };
